@@ -1,0 +1,242 @@
+/* ================================
+   Konga Responsiveness Styles
+   Author: CJ
+   ================================ */
+
+/* ----------- GENERAL RESET ----------- */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ----------- TABLETS (≤1024px) ----------- */
+@media screen and (max-width: 1024px) {
+    .first-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .sec-navbar-ul {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .item-input input {
+        width: 60vw !important;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section1 {
+        width: 100%;
+    }
+
+    .section2 {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        justify-items: center;
+    }
+
+    .quick {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-foot {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-upper {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .latest-deals {
+        margin-left: 0;
+    }
+}
+
+/* ----------- MOBILE LANDSCAPE & SMALL TABLETS (≤768px) ----------- */
+@media screen and (max-width: 768px) {
+    .sec-navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .sec-navbar-ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .item-input {
+        width: 100%;
+    }
+
+    .item-input input {
+        width: 80% !important;
+    }
+
+    .btn {
+        width: 20%;
+        text-align: center;
+    }
+
+    .nav3 {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .na3-ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-foot {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .the-btn {
+        flex-direction: column;
+    }
+
+    .footer-upper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .email {
+        justify-content: center;
+    }
+}
+
+/* ----------- MOBILE PORTRAIT (≤480px) ----------- */
+@media screen and (max-width: 480px) {
+    .kongaimg {
+        width: 6rem;
+    }
+
+    .sec-navbar {
+        padding: 10px;
+    }
+
+    .item-input input {
+        width: 70vw !important;
+        font-size: 12px;
+    }
+
+    .quick {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .deals-header h1 {
+        font-size: 18px;
+    }
+
+    .deals-header a {
+        font-size: 12px;
+    }
+
+    .footer-upper {
+        font-size: 12px;
+        padding: 20px;
+    }
+
+    .footer-foot {
+        font-size: 12px;
+    }
+
+    .about-konga {
+        text-align: center;
+    }
+
+    .the-btn button {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* ----------- HAMBURGER MENU ----------- */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile: show hamburger, hide nav links */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .sec-navbar-ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ed017f;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 10px 0;
+    }
+
+    .sec-navbar-ul.show {
+        display: flex;
+    }
+
+    .sec-navbar-ul .item,
+    .sec-navbar-ul .item-input,
+    .sec-navbar-ul .cart {
+        padding: 10px 15px;
+        width: 100%;
+        color: white;
+    }
+
+    .item-input input {
+        width: 80% !important;
+    }
+
+    .btn {
+        background-color: #fba201;
+    }
+}

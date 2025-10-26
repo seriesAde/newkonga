@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css"
+        integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./konga.css/kongahome.css">
+    <link rel="stylesheet" href="./konga.css/konga-responsiveness.css">
+</head>
+
+<body onload="cartegory(), cat()">
+    <nav class="first-nav">
+        <div><img src="./pics/k_travels2.webp" alt=""></div>
+        <div><img src="./pics/konga_pay.webp" alt=""></div>
+        <div><img src="./pics/new_konga_drinks.webp" alt=""></div>
+        <div><img src="./pics/konga_health.webp" alt=""></div>
+        <div><img src="./pics/k_express2.webp" alt=""></div>
+        <div><img src="./pics/new_konga_groceries.webp" alt=""></div>
+        <div><img src="./pics/kongaTV.webp" alt=""></div>
+        <div><img src="./pics/KongaNow.webp" alt=""></div>
+
+    </nav>
+    <nav class="sec-navbar">
+        <img src="./pics/62f8a0d88e07573b4d46735aa24f3f04.png" alt="" class="kongaimg">
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="ri-menu-line"></i>
+        </div>
+
+        <ul class="sec-navbar-ul" id="nav-links">
+            <li class="item">
+                <p>Store Locator</p>
+            </li>
+            <li class="item">
+                <p>Sell on Konga</p>
+            </li>
+            <li class="item-input">
+                <input placeholder="Search products, brands and categories..." type="search" />
+                <div class="btn"><i class="ri-search-line"></i></div>
+            </li>
+            <li class="item help">
+                <p><i class="ri-question-fill mark"></i><span>Help</span><i class="ri-arrow-down-s-line"></i></p>
+            </li>
+            <li class="item">Login/Signup</li>
+
+            <div class="cart">
+                <i class="ri-shopping-cart-2-line the-cart"></i><span> My Cart</span>
+                <div class="num">
+                    <p>0</p>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+
+    <div class="nav3">
+        <ul class="na3-ul">
+            <div class="dropdown">
+                <button class="dropbtn">All Categories
+                    <i class="ri-arrow-down-s-fill"></i>
+                </button>
+                <div class="dropdown-content">
+                    <!-- <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a> -->
+                </div>
+            </div>
+
+            <li>
+                <p>Computer and Accessories</p>
+            </li>
+            <li>
+                <p>Phone and Tablets</p>
+            </li>
+            <li>
+                <p>Electronics</p>
+            </li>
+            <li>
+                <p>Konga Fashion</p>
+            </li>
+            <li>
+                <p>Home and Kitchen</p>
+            </li>
+            <li>
+                <p>Baby, Kids and Toys</p>
+            </li>
+            <li>
+                <p>Beauty, Health & Personal Care</p>
+            </li>
+        </ul>
+    </div>
+    <div class="hero">
+        <div class="section1">
+
+            <img src="./pics/Starlink_No_7.jpg_Hk5Zx4eIR.webp" alt="">
+
+            <div class="prev">
+                <i class="ri-arrow-left-wide-fill "></i>
+
+                <i class="ri-arrow-right-wide-fill next"></i>
+            </div>
+        </div>
+        <div class="section2">
+            <img src="./pics/box banner.png_6YtnUQEK6.png" alt="">
+            <img src="./pics/access new.png_r19IQgHfC.png" alt="">
+            <img src="./pics/Bulky.jpg_ByGspCKTn.jpg" alt="">
+            <img src="./pics/imagebox.png_VmxmUFtVr.png" alt="">
+        </div>
+
+
+    </div>
+    <div class="quick">
+        <div>
+            <i class="ri-news-line"></i> <span>Konga Blog</span>
+        </div>
+        <div>
+            <i class="ri-wallet-3-line"></i><span>Pay Bills</span>
+        </div>
+        <div>
+            <i class="ri-store-2-line"></i> <span>Offline Store</span>
+        </div>
+        <div>
+            <i class="ri-shopping-bag-line"></i> <span>brand Stores</span>
+        </div>
+        <div>
+            <i class="ri-flight-takeoff-fill"></i> <span>Book Flights</span>
+        </div>
+        <div>
+            <i class="ri-slideshow-3-line"></i> <span>Watch KongaTv</span>
+        </div>
+    </div>
+    <div class="todayDeals">
+        <div class="deals-header">
+            <h1>Today's Deals</h1> <a href="#">See All Items</a></p>
+        </div>
+        <div class="grid">
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-upper">
+            <div class="email">
+                <i class="ri-mail-fill"></i>
+                <div>
+                    <h3>EMAIL SUPPORT</h3>
+                    <a href="#">seriesatwork@gmail.com</a>
+                </div>
+            </div>
+            <div class="email">
+                <i class="ri-phone-fill"></i>
+                <div>
+                    <h3>PHONE SUPPORT</h3>
+                    <a href="#">08052605026</a>
+                </div>
+            </div>
+            <div class="email">
+                <i class="ri-whatsapp-line"></i>
+                <div>
+                    <h3>WHATSAPP</h3>
+                    <a href="#">08052605026</a>
+                </div>
+            </div>
+            <div class="latest-deals">
+                <div>
+                    <h3>GET LATEST DEALS</h3>
+                    <a href="#">Our best promotions sent to your inbox.</a>
+                </div>
+            </div>
+            <div class="input-div"><input placeholder="Email.Address" type="search"><button
+                    type="submit">Subscribe</button></div>
+        </div>
+        <div class="footer-foot">
+            <div class="about-konga">
+                <a href="#">ABOUT KONGA</a>
+                <ul class="about-kongaitem">
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Our Blog</li>
+                    <li>Forum</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="about-konga">
+                <a href="#">PAYMENT</a>
+                <ul class="about-kongaitem">
+                    <li>KongaPay</li>
+                    <li>Wallet</li>
+                    <li>Verve</li>
+                    <li>MAstercard</li>
+                    <li>Visa</li>
+
+                </ul>
+            </div>
+            <div class="about-konga">
+                <a href="#">BUYING ON KONGA</a>
+                <ul class="about-kongaitem">
+                    <li>Buyer Safety Centre</li>
+                    <li>FAQs</li>
+                    <li>Delivery</li>
+                    <li>Konga Return Policy</li>
+                    <li>Digital Services</li>
+                    <li>Bulk Purchase</li>
+                </ul>
+            </div>
+            <div class="about-konga">
+                <a href="#">MORE INFO</a>
+                <ul class="about-kongaitem">
+                    <li>Site Map</li>
+                    <li>Track My Order</li>
+                    <li>Privacy Policy</li>
+                    <li>Authentic Items Policy</li>
+                </ul>
+            </div>
+            <div class="about-konga">
+                <a href="#">MAKE MONEY ON KONGA</a>
+                <P>Become a Konga Affiliate</P>
+
+            </div>
+            <div class="icon-btn">
+                <div class="the-btn">
+                    <button><i class="ri-apple-fill"></i>
+                        <div>
+                            <p>Download on</p>
+                            <h4>App Store</h4>
+                        </div>
+                    </button>
+                    <button><i class="ri-google-play-fill"></i>
+                        <div>
+                            <p>Download on</p>
+                            <h4>Google Play</h4>
+                        </div>
+                    </button>
+                </div>
+                <div class="btn-icons">
+                    <h4>CONNECT WITH US</h4>
+                    <div class="footer-icons">
+                        <i class="ri-facebook-fill"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-instagram-fill"></i>
+                        <i class="ri-youtube-fill"></i>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/konga.js"></script>
+</body>
+
+</html>
